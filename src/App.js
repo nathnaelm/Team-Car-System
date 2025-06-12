@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Drive from './pages/Drive';
+import Profile from './pages/Profile';
+import TabBar from './components/TabBar';
 
 function App() {
   return (
