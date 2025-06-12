@@ -1,0 +1,40 @@
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.tab-bar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tab-bar a:hover {
+    color: #007bff; 
+}
+
+.Home-logo {
+    height: 7vmin;
+    pointer-events: none; 
+    opacity: 100%;
+}
+
+.Drive-logo {
+    height: 7vmin;
+    pointer-events: none;
+}
+
+.Profile-logo {
+    height: 6vmin;
+    pointer-events: none;
+}
+

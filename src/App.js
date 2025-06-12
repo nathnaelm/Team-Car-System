@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import MALogo from './assets/MALogo.png';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -8,22 +8,22 @@ import TabBar from './components/TabBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+      <p>
+        <img src={MALogo} className="App-logo" alt="logo" />
+      </p>
+      <h1> Car Ride System </h1>
     </div>
+      <div style={{ paddingBottom: '60px' }}>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/drive" element={<Drive />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+        <TabBar />
+      </div>
+    </Router>
   );
 }
 
