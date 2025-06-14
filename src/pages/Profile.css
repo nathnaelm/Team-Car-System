@@ -1,0 +1,14 @@
+.driver-profile {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-logo {
+    /* height: 6vmin; */
+    pointer-events: none; 
+    /* border-radius: 2px; */
+    max-width: 100%;
+    height: auto;
+}
